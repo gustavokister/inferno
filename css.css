@@ -5,8 +5,8 @@
     --text-main: #f1f5f9;
     --text-dim: #94a3b8;
     --success: #4ade80;
-    --warning: #fbbf24;
-    --danger: #f87171;
+    --warning: #271f0a;
+    --danger: #bb0c0c;
 }
 
 body {
@@ -38,7 +38,7 @@ table {
 }
 
 th {
-    background: #334155;
+    background: #054cb1;
     color: var(--accent);
     text-align: left;
     padding: 15px;
