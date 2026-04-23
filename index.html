@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css.css">
+    <title>SISTEMA AEROPORTUÁRIO INTELIGENTE</title>
+</head>
+<body>
+
+    <h1>AEROPORTO INTERNACIONAL TECH - PAINEL DE CONTROLE</h1>
+    <p>Status do Sistema: <strong>OPERACIONAL</strong> | Data: 20/05/2024</p>
+
+    <hr>
+
+    <h2>1. Monitor de Voos em Tempo Real (IA Preditiva)</h2>
+    <table border="1" cellpadding="10">
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Destino</th>
+                <th>Portão</th>
+                <th>Status</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>BR102</td>
+                <td>Londres (LHR)</td>
+                <td>A-01</td>
+                <td><mark>EMBARCANDO</mark></td>
+                <td><button>Notificar Passageiros</button></td>
+            </tr>
+            <tr>
+                <td>US505</td>
+                <td>Nova York (JFK)</td>
+                <td>B-12</td>
+                <td><strong>NO HORÁRIO</strong></td>
+                <td><button>Sincronizar Bagagens</button></td>
+            </tr>
+            <tr>
+                <td>JP909</td>
+                <td>Tóquio (NRT)</td>
+                <td>C-04</td>
+                <td><em>ATRASADO (Clima)</em></td>
+                <td><button>Reagendar Conexões</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <hr>
+
+    <h2>2. Sensores IoT e Automação</h2>
+    
+    <details>
+        <summary><strong>Climatização Terminal 1 (Clique para expandir)</strong></summary>
+        <ul>
+            <li>Temperatura: 22.5°C</li>
+            <li>Umidade: 45%</li>
+            <li>Status: Ar condicionado em modo economia de energia</li>
+        </ul>
+    </details>
+
+    <details>
+        <summary><strong>Segurança e Biometria</strong></summary>
+        <ul>
+            <li>Reconhecimento Facial: Ativo em todos os portões</li>
+            <li>Scanners de Bagagem: 0 alertas detectados</li>
+            <li>Portas de Emergência: Trancadas/Monitoradas</li>
+        </ul>
+    </details>
+
+    <hr>
+
+    <h2>3. Logística de Solo</h2>
+    <form>
+        <fieldset>
+            <legend>Autorização de Pouso/Decolagem</legend>
+            <label>Aeronave:</label>
+            <input type="text" placeholder="Prefixo da aeronave"><br><br>
+            
+            <label>Pista:</label>
+            <select>
+                <option>Pista 01 (Norte)</option>
+                <option>Pista 02 (Sul)</option>
+                <option>Pista Auxiliar</option>
+            </select><br><br>
+
+            <label>Nível de Prioridade:</label>
+            <input type="radio" name="prio"> Emergência
+            <input type="radio" name="prio"> Comercial
+            <input type="radio" name="prio"> Carga<br><br>
+
+            <input type="submit" value="Enviar Comando para Torre">
+        </fieldset>
+    </form>
+
+    <hr>
+
+    <h2>4. Logs de Eventos do Sistema (Console)</h2>
+    <textarea rows="8" cols="60" readonly>
+[10:00:01] Sensor de presença ativado no Portão B-12.
+[10:05:44] IA detectou alta densidade de pessoas no Terminal Sul. 
+[10:05:45] Direcionando robôs de limpeza para a área.
+[10:10:12] Atualização de software das esteiras de bagagem concluída.
+    </textarea>
+
+    <hr>
+    <footer>
+        <p><small>Terminal Inteligente - Acesso Restrito a Administradores</small></p>
+    </footer>
+
+</body>
+<script src="script.js"></script>
+</html>
